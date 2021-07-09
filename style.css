@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#eee,gray);
+}
+.container{
+    /* box-shadow: 0px 5px 45px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2); */
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.3),
+    10px 40px 40px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    background: rgba(255,255,255,0.2);
+}
+.input{
+    border-bottom: 1px solid;
+    width: 100%;
+    margin-bottom:5px ;
+    font-size: 1.2rem;
+}
+.input input,.search input{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    background: transparent;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px; 
+}
+.sub button{
+    padding: 10px 15px;
+    background-color: aquamarine;
+    cursor: pointer;
+    border: none;
+    border-radius:5px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+.sub button:hover{
+transform: scale(0.95);
+}
+.h2{
+    margin-bottom: 10px;
+}
+.search{
+    border-bottom: 1px solid;
+    width: 90%;
+    margin-bottom:5px ;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.table table {
+    margin: 5px;
+    width: 100%;
+    border: 2px dashed orangered;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.table table th{
+  background-color: aquamarine;
+    
+}
+.table table td{
+    background-color: aquamarine;
+      padding: 5px 2px 5px 10px;
+  }
+  .table table td i{
+      color: red;
+      font-size: 1.2rem;
+  }
