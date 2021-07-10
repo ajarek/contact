@@ -39,8 +39,7 @@ function search(e){
     const SER=document.querySelectorAll('.table td')
    e.preventDefault() 
     SER.forEach(el=>{
-        console.log(el);
-        console.log(el.innerText);
+       
         if(SEARCH.value===el.innerText){
         creatTable(TEXT,EMAIL,TEL,DATE,document.querySelector('.displaySearch'))
         }
