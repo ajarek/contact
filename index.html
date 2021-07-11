@@ -13,18 +13,23 @@
 <body>
 
     <div class="container">
+
+        <div class="h1">
+            <h1>NEW CONTACT</h1>
+        </div>
+        <div class="displayAlert"></div>
         <form action="">
-            <div class="h1">
-                <h1>NEW CONTACT</h1>
-            </div>
             <div class="input"><label for="text"><i class="bi bi-person-circle"></i><input id="text" type="text"
-                        placeholder="Full Name"></label></div>
+                        placeholder="Full Name" required></label></div>
             <div class="input"><label for="email"><i class="bi bi-envelope-fill"></i><input id="email" type="email"
-                        placeholder="Email"></label></div>
+                        placeholder="Email" required></label></div>
             <div class="input"><label for="tel"><i class="bi bi-telephone-fill"></i><input id="tel" type="tel"
-                        placeholder="Phone"></label></div>
-            <div class="input"><label for="date"><i class="bi bi-calendar3"></i><input placeholder="Birthday" class="textbox-n" type="text" onfocus="(this.type='date')" id="date"></label></div>
-            <div class="sub"><button type="button">ADD NEW CONTACT <i class="bi bi-plus-circle-dotted"></i></button></div>
+                        placeholder="Phone" required></label></div>
+            <div class="input"><label for="date"><i class="bi bi-calendar3"></i><input placeholder="Birthday"
+                        class="textbox-n" type="text" onfocus="(this.type='date')" id="date" required></label></div>
+            <div class="sub"><button type="submit">ADD NEW CONTACT <i class="bi bi-plus-circle-dotted"></i></button>
+            </div>
+
         </form>
         <div class="h2">
             <h2>CONTACT LIST</h2>
@@ -32,12 +37,7 @@
         <div class="displaySearch"></div>
         <div class="search"><label for=""><i class="bi bi-search"></i><input type="search"
                     placeholder="Search By Name"></label></div>
-        <div class="table">
-           
-
-
-            
-        </div>
+        <div class="table"></div>
     </div>
 
     <script type="module" src="script.js"></script>
