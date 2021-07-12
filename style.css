@@ -20,7 +20,7 @@ body {
     box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
         inset -4px -4px 5px rgba(0, 0, 0, 0.3),
         10px 40px 40px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 375px;
     height: 580px;
     display: flex;
     flex-direction: column;
@@ -148,4 +148,10 @@ table td button:hover {
 .alert i {
     font-size: 1.5rem;
     padding-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100vw;
+    }
 }
